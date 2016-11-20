@@ -1,0 +1,7 @@
+#!/bin/sh
+
+install-package php5-dev gcc autoconf g++ openssl-dev make libtool
+
+pecl install $@
+
+uninstall-package php5-dev gcc autoconf g++ openssl-dev make libtool
